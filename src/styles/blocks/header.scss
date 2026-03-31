@@ -1,0 +1,80 @@
+.header {
+  min-height: 100vh;
+  padding-block: 36px 52px;
+  background:
+    linear-gradient(180deg, rgba(17, 17, 17, 0.04), rgba(17, 17, 17, 0.28)),
+    url('../images/header-bike-compressed.jpg') center 42% / cover no-repeat;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.top-bar .logo {
+  display: flex;
+  align-items: center;
+  width: 187px;
+  height: 56px;
+  white-space: nowrap;
+  font-size: 56px;
+}
+
+.top-bar--menu {
+  padding-block: 24px;
+}
+
+.top-bar__actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 8px 0;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 128px);
+  text-align: center;
+}
+
+.header__title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.5px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-block: 24px 40px;
+    background-position: 58% center;
+  }
+
+  .top-bar {
+    align-items: center;
+  }
+
+  .top-bar .logo {
+    width: auto;
+    height: auto;
+    font-size: 44px;
+  }
+
+  .top-bar__actions {
+    gap: 20px;
+    padding: 0;
+  }
+
+  .header__content {
+    min-height: calc(100vh - 104px);
+  }
+
+  .header__title {
+    font-size: 46px;
+    letter-spacing: -1px;
+  }
+}
