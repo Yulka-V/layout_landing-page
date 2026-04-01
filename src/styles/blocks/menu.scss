@@ -4,11 +4,13 @@
   z-index: 10;
   opacity: 0;
   pointer-events: none;
+  overflow-x: hidden;
   transition: opacity 0.3s ease;
 }
 
 .menu {
   overflow: auto;
+  min-height: 100vh;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent),
     #181818;
 }
@@ -29,9 +31,8 @@
 .menu__content {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 88px);
   padding-top: 36px;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
 }
 
 .menu__nav {
@@ -153,6 +154,11 @@
 
 .icon--phone:hover {
   opacity: 0.8;
+}
+
+.icon--menu:hover::before,
+.icon--phone:hover::before {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.35));
 }
 
 .icon--close::before {
