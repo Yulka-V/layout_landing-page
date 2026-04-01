@@ -29,6 +29,16 @@
   border-color: #5a5dff;
 }
 
+.contact__field:-webkit-autofill,
+.contact__field:-webkit-autofill:hover,
+.contact__field:-webkit-autofill:focus,
+.contact__field:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #f1f1f1 inset;
+  -webkit-text-fill-color: #111;
+  border: 1px solid transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .contact__field--textarea {
   min-height: 148px;
   resize: vertical;
