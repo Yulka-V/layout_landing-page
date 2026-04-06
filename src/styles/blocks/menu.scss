@@ -9,10 +9,13 @@
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   overflow: auto;
   min-height: 100vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent),
-    #181818;
+  overscroll-behavior: contain;
+  color: #1d1d1d;
+  background-color: #c2c2c2;
 }
 
 .menu:target {
@@ -24,13 +27,13 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  backdrop-filter: blur(14px);
-  background-color: rgba(17, 17, 17, 0.92);
+  background-color: #c2c2c2;
 }
 
 .menu__content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-top: 36px;
   padding-bottom: 32px;
 }
@@ -95,7 +98,7 @@
 
 .menu__phone-number:hover,
 .menu__call-to-order:hover {
-  color: #b5b8ff;
+  color: #555;
 }
 
 .icon {
@@ -124,7 +127,7 @@
   width: 18px;
   height: 2px;
   border-radius: 999px;
-  background-color: #fff;
+  background-color: currentcolor;
 }
 
 .icon--menu::before {

@@ -16,13 +16,17 @@
 .top-bar .logo {
   display: flex;
   align-items: center;
-  width: 187px;
-  height: 56px;
+  width: auto;
+  height: auto;
   white-space: nowrap;
-  font-size: 56px;
+  font-size: 48px;
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
+}
+
+.top-bar--menu .logo {
+  font-size: 44px;
 }
 
 .top-bar .logo:hover {
@@ -41,16 +45,7 @@
   padding: 8px 0;
 }
 
-.top-bar__actions .icon--phone {
-  position: relative;
-}
-
-.top-bar__actions .icon--phone::after {
-  content: '+1 234 555-55-55';
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 16px);
-  transform: translateY(-50%);
+.top-bar__phone {
   opacity: 0;
   pointer-events: none;
   font-size: 12px;
@@ -61,7 +56,11 @@
   transition: opacity 0.3s ease;
 }
 
-.top-bar__actions .icon--phone:hover::after {
+.top-bar__actions .top-bar__phone:hover {
+  opacity: 1;
+}
+
+.top-bar__actions:has(.icon--phone:hover) .top-bar__phone {
   opacity: 1;
 }
 
@@ -93,7 +92,11 @@
   .top-bar .logo {
     width: auto;
     height: auto;
-    font-size: 44px;
+    font-size: 36px;
+  }
+
+  .top-bar--menu .logo {
+    font-size: 36px;
   }
 
   .top-bar__actions {
@@ -102,6 +105,10 @@
   }
 
   .top-bar__actions .icon--phone::after {
+    display: none;
+  }
+
+  .top-bar__phone {
     display: none;
   }
 
