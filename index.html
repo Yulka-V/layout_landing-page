@@ -12,43 +12,34 @@
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111111'/%3E%3Cpath d='M18 44V20h7l7 11 7-11h7v24h-6V30l-8 12-8-12v14z' fill='%23fff'/%3E%3C/svg%3E"
     />
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
   </head>
   <body class="page__body">
     <header class="header" id="home">
       <div class="container">
         <div class="top-bar">
-          <a href="#home" class="logo" aria-label="MYBIKE home">
-            MyBiKE
-          </a>
+          <a href="#home" class="logo" aria-label="MYBIKE home">MyBiKE</a>
 
           <div class="top-bar__actions">
-            <a
-              href="tel:+12345555555"
-              class="top-bar__phone"
-            >
-              +1 234 555-55-55
-            </a>
-            <a
-              href="tel:+12345555555"
-              class="icon icon--phone"
-              aria-label="Call MYBIKE"
-            ></a>
+            <div class="top-bar__phone-wrap">
+              <a
+                href="tel:+12345555555"
+                class="top-bar__phone"
+              >
+                +1 234 555-55-55
+              </a>
+              <a
+                href="tel:+12345555555"
+                class="icon icon--phone"
+                aria-label="Call MYBIKE"
+              ></a>
+            </div>
             <a
               href="#menu"
               class="icon icon--menu"
@@ -65,10 +56,8 @@
 
     <aside class="page__menu menu" id="menu">
       <div class="menu__top">
-        <div class="container top-bar top-bar--menu">
-          <a href="#home" class="logo" aria-label="MYBIKE home">
-            MyBiKE
-          </a>
+        <div class="container top-bar">
+          <a href="#home" class="logo" aria-label="MYBIKE home">MyBiKE</a>
 
           <a
             href="#home"
@@ -81,6 +70,9 @@
       <div class="container menu__content">
         <nav class="nav menu__nav">
           <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">Home</a>
+            </li>
             <li class="nav__item">
               <a class="nav__link" href="#about">About us</a>
             </li>
@@ -96,13 +88,9 @@
           </ul>
         </nav>
 
-        <a href="tel:+12345555555" class="menu__phone-number">
-          +1 234 555 55 55
-        </a>
+        <a href="tel:+12345555555" class="menu__phone-number">+1 234 555 55 55</a>
 
-        <a href="#compare" class="menu__call-to-order">
-          Book a test ride
-        </a>
+        <a href="#compare" class="menu__call-to-order">Book a test ride</a>
       </div>
     </aside>
 
@@ -113,8 +101,8 @@
 
           <div class="section__content">
             <p>
-              Shift your ride, not gears. Find the fastest way to move in the
-              city as the bike adapts intuitively to power the speed you need.
+              Shift your ride, not gears. Find the fastest way to move in the city as
+              the bike adapts intuitively to power the speed you need.
             </p>
           </div>
         </div>
@@ -151,8 +139,8 @@
               </a>
               <h3 class="compare__name">Ride in town ST</h3>
               <p class="compare__description">
-                An open frame for an upright riding position as the most
-                comfortable ride in town.
+                An open frame for an upright riding position as the most comfortable
+                ride in town.
               </p>
               <p class="compare__price">$ 2,590</p>
             </article>
@@ -167,8 +155,8 @@
               </a>
               <h3 class="compare__name">Agile ride 3</h3>
               <p class="compare__description">
-                The lightweight frame that has earned its street tread as a
-                sleek, agile ride.
+                The lightweight frame that has earned its street tread as a sleek,
+                agile ride.
               </p>
               <p class="compare__price">$ 2,090</p>
             </article>
@@ -201,9 +189,8 @@
 
               <h3 class="details__title">Auto Unlock</h3>
               <p class="details__text">
-                The app senses when you're nearby to unlock automatically. GPS
-                tracking so you know where your bike is and can track it
-                anytime.
+                The app senses when you're nearby to unlock automatically. GPS tracking
+                so you know where your bike is and can track it anytime.
               </p>
             </article>
 
@@ -227,9 +214,9 @@
 
               <h3 class="details__title">Range &amp; Integrated lights</h3>
               <p class="details__text">
-                The removable battery has up to 70km battery autonomy and
-                weighs only 2.4 kg. Lights integrated into the frame give you
-                always-on visibility day and night.
+                The removable battery has up to 70km battery autonomy and weighs only
+                2.4 kg. Lights integrated into the frame give you always-on visibility
+                day and night.
               </p>
             </article>
 
@@ -253,9 +240,9 @@
 
               <h3 class="details__title">Hydraulic disc brakes &amp; Lightweight</h3>
               <p class="details__text">
-                Brakes with total stopping power the second you make contact.
-                The removable battery has up to 70km battery autonomy and is
-                neatly integrated into the frame giving a light, clean ride.
+                Brakes with total stopping power the second you make contact. The
+                removable battery has up to 70km battery autonomy and is neatly
+                integrated into the frame giving a light, clean ride.
               </p>
             </article>
 
@@ -284,13 +271,6 @@
                 placeholder="hello@mybike.com"
                 required
               />
-              <input
-                class="contact__field"
-                type="tel"
-                name="phone"
-                placeholder="+1 234 555 55 55"
-                required
-              />
               <textarea
                 class="contact__field contact__field--textarea"
                 name="message"
@@ -302,14 +282,10 @@
 
             <div class="contact__info">
               <p class="contact__label">Phone</p>
-              <a class="contact__value" href="tel:+12345555555">
-                +1 234 555 55 55
-              </a>
+              <a class="contact__value" href="tel:+12345555555">+1 234 555 55 55</a>
 
               <p class="contact__label">Email</p>
-              <a class="contact__value" href="mailto:hello@mybike.com">
-                hello@mybike.com
-              </a>
+              <a class="contact__value" href="mailto:hello@mybike.com">hello@mybike.com</a>
 
               <p class="contact__label">Address</p>
               <a

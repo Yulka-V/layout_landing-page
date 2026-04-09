@@ -1,8 +1,10 @@
-@use './blocks/page';
-@use './blocks/header';
-@use './blocks/menu';
-@use './blocks/section';
-@use './blocks/compare';
-@use './blocks/details';
-@use './blocks/contact';
-@use './blocks/footer';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap';
+
+@import './blocks/page';
+@import './blocks/section';
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/compare';
+@import './blocks/details';
+@import './blocks/contact';
+@import './blocks/footer';

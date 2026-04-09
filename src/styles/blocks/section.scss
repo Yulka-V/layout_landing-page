@@ -1,14 +1,15 @@
 .section {
-  padding-block: 96px;
+  padding-block: 120px;
 }
 
 .section--about {
-  padding-top: 88px;
+  padding-top: 120px;
 }
 
 .section__title {
-  margin-bottom: 40px;
-  font-size: clamp(32px, 5vw, 56px);
+  margin: 0 0 48px;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -0.04em;
 }
@@ -19,17 +20,34 @@
 
 .section__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-  gap: 40px;
+  grid-template-columns: minmax(0, 412px) minmax(0, 498px);
+  justify-content: space-between;
+  gap: 48px;
   align-items: start;
 }
 
 .section__content {
-  display: grid;
-  gap: 20px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.78);
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+@media (max-width: 1023px) {
+  .section {
+    padding-block: 96px;
+  }
+
+  .section--about {
+    padding-top: 96px;
+  }
+
+  .section__title {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+
+  .section__content {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -37,16 +55,62 @@
     padding-block: 64px;
   }
 
+  .section--about {
+    padding-top: 60px;
+  }
+
   .section__title {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
+    font-size: 48px;
+  }
+
+  #contacts .section__title {
+    width: 280px;
+    max-width: 100%;
+    margin-bottom: 48px;
+    margin-inline: auto;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.5px;
   }
 
   .section__grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 32px;
+  }
+
+  .section--about .section__grid {
+    gap: 0;
   }
 
   .section__content {
-    font-size: 16px;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .section--about .section__title,
+  .section--about .section__content {
+    width: 280px;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .section--about .section__title {
+    width: 152px;
+    margin-bottom: 32px;
+    margin-left: 20px;
+    margin-right: auto;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.5px;
+  }
+
+  .section--about .section__content {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.4;
   }
 }

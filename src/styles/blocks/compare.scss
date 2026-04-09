@@ -7,20 +7,15 @@
 .compare__card {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .compare__image-link {
   display: block;
+  margin-bottom: 32px;
   overflow: hidden;
-  border-radius: 24px;
-  background-color: #1d1d1d;
 }
 
 .compare__image {
-  aspect-ratio: 1 / 1.05;
-  object-fit: contain;
-  padding: 24px;
   transition: transform 0.3s ease;
 }
 
@@ -29,22 +24,32 @@
 }
 
 .compare__name {
+  margin: 0 0 8px;
   font-size: 24px;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .compare__description {
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.6;
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .compare__price {
+  margin: 0;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .compare {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .compare__image-link {
+    margin-bottom: 24px;
   }
 }
