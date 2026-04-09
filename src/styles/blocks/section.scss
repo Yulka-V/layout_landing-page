@@ -2,9 +2,13 @@
   padding-block: 120px;
 }
 
-.section--about {
-  padding-top: 120px;
-}
+  .section--about {
+    padding-top: 120px;
+  }
+
+  .section--contacts {
+    padding-top: 120px;
+  }
 
 .section__title {
   margin: 0 0 48px;
@@ -40,6 +44,10 @@
     padding-top: 96px;
   }
 
+  .section--contacts {
+    padding-top: 96px;
+  }
+
   .section__title {
     margin-bottom: 40px;
     font-size: 48px;
@@ -59,12 +67,16 @@
     padding-top: 60px;
   }
 
+  .section--contacts {
+    padding-top: 64px;
+  }
+
   .section__title {
     margin-bottom: 32px;
     font-size: 48px;
   }
 
-  #contacts .section__title {
+  .section--contacts .section__title {
     width: 280px;
     max-width: 100%;
     margin-bottom: 48px;

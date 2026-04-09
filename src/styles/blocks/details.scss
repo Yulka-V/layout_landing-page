@@ -47,6 +47,11 @@
   line-height: 1.4;
 }
 
+.details .button--center {
+  width: 324px;
+  max-width: 100%;
+}
+
 @media (max-width: 1023px) {
   .details__images {
     gap: 16px;
